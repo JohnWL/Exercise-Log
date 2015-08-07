@@ -1,4 +1,4 @@
 <% @workout.each do |w| %>
-  <h2><%= link_to w.date, w %></h2>
+  <h2><%= link_to w.date.strftime("%B %e, %Y"), w %></h2>
   <h3><%= w.workout %></h3>
 <% end %>
