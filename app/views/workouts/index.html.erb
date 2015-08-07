@@ -1,4 +1,6 @@
-<% @workout.each do |w| %>
-  <h2><%= link_to w.date.strftime("%B %e, %Y"), w %></h2>
-  <h3><%= w.workout %></h3>
-<% end %>
+<div id="index_workouts">
+  <% @workout.each do |w| %>
+    <h2><%= link_to w.date.strftime("%B %e, %Y"), w %></h2>
+    <h3><span>Workout: </span><%= w.workout %></h3>
+  <% end %>
+</div>
