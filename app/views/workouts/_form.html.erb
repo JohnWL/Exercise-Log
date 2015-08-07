@@ -1,0 +1,10 @@
+<div class="form">
+  <%= simple_form_for(@workout) do |f| %>
+    <%= f.input :date, label: "Date" %>
+    <%= f.input :workout, label: "Bodyparts Trained", input_html: { class: "form-control" } %>
+    <%= f.input :mood, label: "Energy Level", input_html: { class: "form-control" } %>
+    <%= f.input :length, label: "Workout Length", input_html: { class: "form-control" } %>
+    <br>
+    <%= f.button :submit %>
+  <% end %>
+</div>
