@@ -1,1 +1,4 @@
-<h1>index homepage</h1>
+<% @workout.each do |w| %>
+  <h2><%= link_to w.date, w %></h2>
+  <h3><%= w.workout %></h3>
+<% end %>
